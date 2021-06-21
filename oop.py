@@ -14,7 +14,7 @@ class Emplyoee:
 
     # initalize class attributes
     # self refers to the instance itself but not the class
-    # __init__ method runs everytime when we create a new instance
+    # __init__ method runs everytime when we create a new instance; essentially a templet
     def __init__(self, first, last, pay):
         # attributes
         self.first = first
@@ -32,6 +32,7 @@ class Emplyoee:
     # a method to change pay
     def app_raise(self):
         self.pay = int(self.pay * self.RAISE_AMT)
+# -------------------------
 
 
 print(Emplyoee.NUM_EMP)
